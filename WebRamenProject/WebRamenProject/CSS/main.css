@@ -3,8 +3,40 @@
 	font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
 }
 
+nav
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align:center;
+}
+
+	nav > ul
+	{
+		list-style-type: none;
+	}
+
+		nav > ul > li
+		{
+			display:inline;
+		}
+
+			nav > ul > li > a
+			{
+				text-decoration: none;
+				color:#000;
+			}
+
+				nav > ul > li > a:hover
+				{
+					border-bottom-style: solid;
+					border-bottom-color: #000000;
+					border-bottom-width: medium;					
+				}
+
 footer
 {
-	font-size: x-small;	
+	font-size: x-small;
 	text-align: center;
+	margin-top: 10px;
+	width: 100%;
 }

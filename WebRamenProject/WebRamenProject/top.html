@@ -3,6 +3,13 @@
 <head>
     <title>Top Ramen in Tokyo</title>
     <link rel="stylesheet" type="text/css" href="CSS/main.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/container.css" />
+    
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="JS/Gmap.js"></script>
+    <script src="JS/top.js"></script>
 </head>
 <body>
     <nav>
@@ -11,6 +18,19 @@
             <li><a href="top.html">Top</a></li>
         </ul>
     </nav>
+
+    <div id="ramen_container">        
+        <div id="ramen_info">
+            <ul id="ramen_top_restaurant">
+                <li>Michi Tsukemen</li>
+                <li>Ittou ramen</li>
+                <li>Torisoba mutahiro nigo ten ramen</li>
+                <li>Mendokoro Honda ramen</li>
+                <li>Gonoshin seisakujo Tsukemen</li>
+            </ul>
+        </div>
+        <div id="map_canvas"></div>
+    </div>
 
     <footer>designed by Tim and Natsumi</footer>
 </body>

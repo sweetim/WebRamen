@@ -1,0 +1,23 @@
+﻿#map_canvas
+{
+	width: 500px;
+	height: 500px;
+	background-color: #CCC;
+	margin-left: 30%;
+}
+
+#ramen_info
+{
+	float: left;
+	width: 30%;
+}
+
+#ramen_top_restaurant > li
+{
+	list-style-type:none;
+}
+
+	#ramen_top_restaurant > li:hover
+	{
+		background-color: #0ff;
+	}
