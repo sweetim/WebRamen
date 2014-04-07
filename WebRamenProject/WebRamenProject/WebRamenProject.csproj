@@ -59,10 +59,14 @@
   <ItemGroup>
     <Content Include="CSS\main.css" />
     <Content Include="CSS\container.css" />
+    <Content Include="history.html" />
     <Content Include="index.html" />
     <Content Include="JS\Gmap.js" />
     <Content Include="JS\top.js" />
+    <Content Include="JS\type.js" />
     <Content Include="top.html" />
+    <Content Include="type.html" />
+    <Content Include="unique.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
