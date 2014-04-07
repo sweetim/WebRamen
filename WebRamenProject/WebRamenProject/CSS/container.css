@@ -21,3 +21,14 @@
 	{
 		background-color: #0ff;
 	}
+
+.containerL
+{
+	float:left;
+	width:30%;
+}
+
+.containerR
+{
+	margin-left: 30%;
+}
