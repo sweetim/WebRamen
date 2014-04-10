@@ -67,6 +67,7 @@
     <Content Include="JS\Gmap.js" />
     <Content Include="JS\top.js" />
     <Content Include="JS\type.js" />
+    <Content Include="test.html" />
     <Content Include="top.html" />
     <Content Include="type.html" />
     <Content Include="unique.html" />
