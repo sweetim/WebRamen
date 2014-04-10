@@ -1,11 +1,15 @@
-﻿body 
-{
-	font-family: 'Segoe UI' , Tahoma, Geneva, Verdana, sans-serif;
+﻿body {
+    max-width: 80%;
+    font-family: "Lucida Grande", sans-serif;
+    margin: 0 auto;
+    background: url("../Pics/background.jpg") no-repeat center center fixed; 
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 nav
-{
-	font-weight: bold;
+{    
+    padding-top:1%;
 	text-transform: uppercase;
 	text-align:center;
 }
@@ -17,29 +21,29 @@ nav
 
 		nav > ul > li
 		{
-			display:inline;
+			display:inline-block;
+
 		}
 
 			nav > ul > li > a
 			{
 				text-decoration: none;
 				color:#000;
+
+                padding:5px 20px;
+                border-top: 2px solid #000;
 			}
 
 				nav > ul > li > a:hover
 				{
-					border-bottom-style: solid;
-					border-bottom-color: #000000;
-					border-bottom-width: medium;					
+					border-top: 4px solid #000;			
 				}
 
 footer
 {
-	position: relative;
 	font-size: x-small;
 	text-align: center;
     width: 99%;
 	margin-top: 1%;
-	top: 0px;
-	left: 0px;
+    color:#888;
 }

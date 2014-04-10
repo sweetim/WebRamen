@@ -8,11 +8,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-    <?php include("./PHP/header.php"); ?>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="top.html">Top</a></li>
+            <li><a href="unique.html">Unique</a></li>
+            <li><a href="type.html">Type</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-    <div>        
-        <div class="containerL">
-            <ul id="ramen_type">
+    <section>
+        <aside class="containerNav">
+            <ul>
                 <li id="0">Shoyu</li>
                 <li id="1">Tonkotsu</li>
                 <li id="2">Miso</li>
@@ -21,13 +30,15 @@
                 <li id="5">Shio</li>
                 <li id="6">Fish</li>
             </ul>
-        </div>       
-        <div class="containerR">
-            <p id="ramen_type_info">Hello</p>
-        </div> 
-    </div>
+        </aside>       
+        <div class="containerContent">
+            <p>Hello</p>            
+        </div>
+        <div style="clear:both"></div>
+    </section>
 
-    <?php include("./PHP/footer.php"); ?>
+
+    <footer>designed by Tim and Natsumi</footer>
 
     <script src="JS/type.js"></script>
 </body>

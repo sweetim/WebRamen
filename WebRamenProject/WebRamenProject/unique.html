@@ -9,11 +9,20 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
-    <?php include('./PHP/header.php'); ?>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="top.html">Top</a></li>
+            <li><a href="unique.html">Unique</a></li>
+            <li><a href="type.html">Type</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-    <div id="ramen_container">        
-        <div id="ramen_info">
-            <ul id="ramen_top_restaurant">
+    <section id="unique"> 
+        <aside class="containerNav">
+            <ul>
                 <li id="0">Tomota ramen</li>
                 <li id="1">Pineapple ramen</li>
                 <li id="2">Crab ramen</li>
@@ -23,12 +32,14 @@
                 <li id="6">Cheese tonkotsu</li>
                 <li id="7">Curry ramen</li>
             </ul>
-        </div>        
-        <p id="ramen_top_restaurant_info">HEkki</p>
-        <div id="map_canvas"></div>
-    </div>
-    <?php include('./PHP/footer.php'); ?>
-
+        </aside>      
+        <div class="containerContent">
+            <p>HEkki</p>
+            <div id="map_canvas"></div>
+        </div>       
+        <div style="clear:both"></div>     
+    </section>
+    <footer>designed by Tim and Natsumi</footer>
     <script src="JS/top.js"></script>
 </body>
 </html>

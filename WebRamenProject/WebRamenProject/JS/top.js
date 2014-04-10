@@ -31,26 +31,27 @@ ramenTop[4] = {
 
 var marker;
 var map;
-
+var map2;
 google.maps.event.addDomListener(window, 'load', initializeGMap);
 
-$("#ramen_top_restaurant li").click(function () {       
+$(".containerNav ul li").click(function () {
     var newLatLng = new google.maps.LatLng(ramenTop[this.id].lat, ramenTop[this.id].long);
     marker.setPosition(newLatLng);
     map.setCenter(newLatLng);
 
-    $("#ramen_top_restaurant_info").text(ramenTop[this.id].info);
+    $(".containerContent p").text(ramenTop[this.id].info);
 });
 
 function initializeGMap() {
-    var map_canvas = document.getElementById('map_canvas');
+    var map_canvas = document.getElementById("map_canvas");
+    var map_canvas2 = document.getElementById("map_canvas2");
     var map_options = {
         center: new google.maps.LatLng(ramenTop[0].lat, ramenTop[0].long),
         disableDefaultUI: true,
         zoom: 18,
     }
     map = new google.maps.Map(map_canvas, map_options);
-
+    map2 = new google.maps.Map(map_canvas2, map_options);
     var ramen1location = new google.maps.LatLng(ramenTop[0].lat, ramenTop[0].long);
     marker = new google.maps.Marker({
         position: ramen1location,

@@ -60,13 +60,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.html" />
+    <Content Include="CSS\container.min.css" />
     <Content Include="CSS\main.css" />
     <Content Include="CSS\container.css" />
     <Content Include="history.html" />
     <Content Include="index.html" />
     <Content Include="JS\Gmap.js" />
+    <Content Include="JS\main.js" />
     <Content Include="JS\top.js" />
     <Content Include="JS\type.js" />
+    <Content Include="minindex.html" />
+    <Content Include="Pics\background.jpg" />
+    <Content Include="Pics\burnmisoramen.jpg" />
+    <Content Include="Pics\ebiramen.jpg" />
+    <Content Include="Pics\ichiran.jpg" />
+    <Content Include="Pics\imoramen.jpg" />
+    <Content Include="Pics\kaniramen.jpg" />
+    <Content Include="Pics\spicyramem.jpg" />
+    <Content Include="Pics\tsukemen.jpg" />
     <Content Include="tabpage.html" />
     <Content Include="top.html" />
     <Content Include="type.html" />
