@@ -7,7 +7,16 @@ $("nav li a").click(function () {
     $(tabItem).fadeIn();
 });
 
-function initializeGMap() {
+
+$(window).resize(function () {
+    if ($(window).width() < 1000) {
+        $("body").css("max-width", "100%");
+    } else {
+        $("body").css("max-width", "80%");
+    }
+});
+
+/*function initializeGMap() {
     var map_canvas = document.getElementsByClassName('map_canvas');
     var map_options = {
         center: new google.maps.LatLng(ramenTop[0].lat, ramenTop[0].long),
@@ -32,4 +41,4 @@ function initializeGMap() {
     google.maps.event.addListener(marker, 'click', function () {
         infowindow.open(map, marker);
     });
-}
+}*/

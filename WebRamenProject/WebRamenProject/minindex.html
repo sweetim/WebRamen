@@ -32,14 +32,14 @@
         </p>
     </section>
 
-    <section class="tabContent" id="top">              
+    <section class="tabContent" id="top">          
         <aside class="containerNav">
             <ul>
-                <li id="0">Michi Tsukemen</li>
-                <li id="1">Ittou ramen</li>
-                <li id="2">Torisoba mutahiro nigo ten ramen</li>
-                <li id="3">Mendokoro Honda ramen</li>
-                <li id="4">Gonoshin seisakujo Tsukemen</li>
+                <li>Michi Tsukemen</li>
+                <li>Ittou ramen</li>
+                <li>Torisoba mutahiro nigo ten ramen</li>
+                <li>Mendokoro Honda ramen</li>
+                <li>Gonoshin seisakujo Tsukemen</li>
             </ul>
         </aside>      
         <div class="containerContent">        
@@ -54,14 +54,14 @@
     <section class="tabContent" id="unique"> 
         <aside class="containerNav">
             <ul>
-                <li id="0">Tomota ramen</li>
-                <li id="1">Pineapple ramen</li>
-                <li id="2">Crab ramen</li>
-                <li id="3">Pie ramen</li>
-                <li id="4">Mushroom ramen</li>
-                <li id="5">Dried shark ramen</li>
-                <li id="6">Cheese tonkotsu</li>
-                <li id="7">Curry ramen</li>
+                <li>Tomota ramen</li>
+                <li>Pineapple ramen</li>
+                <li>Crab ramen</li>
+                <li>Pie ramen</li>
+                <li>Mushroom ramen</li>
+                <li>Dried shark ramen</li>
+                <li>Cheese tonkotsu</li>
+                <li>Curry ramen</li>
             </ul>
         </aside>      
         <div class="containerContent">
@@ -74,13 +74,13 @@
     <section class="tabContent" id="type">
         <aside class="containerNav">
             <ul>
-                <li id="0">Shoyu</li>
-                <li id="1">Tonkotsu</li>
-                <li id="2">Miso</li>
-                <li id="3">Tan-tan</li>
-                <li id="4">Abura soba</li>
-                <li id="5">Shio</li>
-                <li id="6">Fish</li>
+                <li>Shoyu</li>
+                <li>Tonkotsu</li>
+                <li>Miso</li>
+                <li>Tan-tan</li>
+                <li>Abura soba</li>
+                <li>Shio</li>
+                <li>Fish</li>
             </ul>
         </aside>       
         <div class="containerContent">
@@ -147,8 +147,18 @@
 
 
     <footer>designed by Tim and Natsumi</footer>
-    <script src="JS/top.js"></script>
-    <script src="JS/main.js"></script>
-    <script src="JS/type.js"></script>
+    <script src="JS/main.min.js"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-49860919-1', 'webuda.com');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+    </script>
 </body>
 </html>

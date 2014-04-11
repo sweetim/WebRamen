@@ -31,27 +31,36 @@ ramenTop[4] = {
 
 var marker;
 var map;
-var map2;
-google.maps.event.addDomListener(window, 'load', initializeGMap);
 
-$(".containerNav ul li").click(function () {
-    var newLatLng = new google.maps.LatLng(ramenTop[this.id].lat, ramenTop[this.id].long);
+$("#top .containerNav ul li").click(function () {
+    var selectedID = $(this).index();
+    var newLatLng = new google.maps.LatLng(ramenTop[selectedID].lat, ramenTop[selectedID].long);
     marker.setPosition(newLatLng);
     map.setCenter(newLatLng);
 
-    $(".containerContent p").text(ramenTop[this.id].info);
+    $("#top .containerContent p").text(ramenTop[selectedID].info);
 });
 
+google.maps.event.addDomListener(window, 'load', initializeGMap);
+var tab1stdata = $("nav ul").children().children().attr("href");
+$(".tabContent").hide();
+$(tab1stdata).show();
+$("nav li a").click(function () {
+    var tabItem = $(this).attr("href");
+    $(".tabContent").hide();
+    $(tabItem).fadeIn();
+    google.maps.event.trigger(map, 'resize');
+});
 function initializeGMap() {
     var map_canvas = document.getElementById("map_canvas");
-    var map_canvas2 = document.getElementById("map_canvas2");
     var map_options = {
         center: new google.maps.LatLng(ramenTop[0].lat, ramenTop[0].long),
         disableDefaultUI: true,
         zoom: 18,
     }
+
     map = new google.maps.Map(map_canvas, map_options);
-    map2 = new google.maps.Map(map_canvas2, map_options);
+
     var ramen1location = new google.maps.LatLng(ramenTop[0].lat, ramenTop[0].long);
     marker = new google.maps.Marker({
         position: ramen1location,

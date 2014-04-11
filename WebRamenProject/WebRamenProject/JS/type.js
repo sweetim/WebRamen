@@ -27,6 +27,7 @@ ramenType[3] = {
         "シのように強く煮出すことがないため混濁していない。"
 }
 
-$(".containerNav ul li").click(function () {
-    $(".containerContent p").text(ramenType[this.id].info);
+$("#type .containerNav ul li").click(function () {
+    var selectedID = $(this).index();
+    $("#type .containerContent p").text(ramenType[selectedID].info);
 });
