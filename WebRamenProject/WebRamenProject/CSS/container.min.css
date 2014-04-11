@@ -4,18 +4,23 @@
     width:30%;
 }
 
-    .containerNav > ul > li
-    {
-        list-style-type:none;
-        background:rgba(205, 205, 205, 0.5);
-        padding: 10px;
-        margin:5px;
-    }
+	.containerNav > ul
+	{
+		padding:0;
+	}
 
-        .containerNav > ul > li:hover
-        {
-            background-color: #0ff;
-        }
+		.containerNav > ul > li
+		{
+			list-style-type:none;
+			background:rgba(205, 205, 205, 0.5);
+			padding: 10px;
+			margin:5px;
+		}
+
+			.containerNav > ul > li:hover
+			{
+				background-color:rgba(155, 155, 155, 0.5);
+			}
 
 .containerContent 
 {
