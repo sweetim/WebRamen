@@ -64,7 +64,7 @@
     <Content Include="CSS\main.css" />
     <Content Include="CSS\container.css" />
     <Content Include="history.html" />
-    <Content Include="indexAll.html" />
+    <Content Include="indexOld.html" />
     <Content Include="JS\Gmap.js" />
     <Content Include="JS\main.js" />
     <Content Include="JS\main.min.js" />
