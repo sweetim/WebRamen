@@ -28,6 +28,17 @@
     </script>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>
+        (function (d, s, id)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=304132173077452";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
     <nav>
         <ul>
             <li><a href="#index">Home</a></li>
@@ -84,7 +95,7 @@
             </ul>
         </aside>      
         <div class="containerContent">
-            <p>HEkki</p>
+            <p>HEkki</p>            
             <div id="map_canvas2"></div>
         </div>            
         <div style="clear:both"></div>
@@ -104,6 +115,10 @@
         </aside>       
         <div class="containerContent">
             <p>Hello</p>            
+            <div class="fb-share-button" data-href="https://nipponramen.appspot.com" data-type="box_count"></div>
+            <div class="g-plusone" data-annotation="inline" data-width="300" data-href="http://tokyoramen.webuda.com"></div>      
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://tokyoramen.webuda.com" data-size="large">Tweet</a>
+            <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https'; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = p + '://platform.twitter.com/widgets.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'twitter-wjs');</script>      
         </div>
         <div style="clear:both"></div>
     </section>
@@ -172,9 +187,17 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
     </div>
-
+    
     <footer>designed by Tim and Natsumi</footer>
     <script src="JS/main.min.js"></script>
+    <!-- Google+ +1-->
+    <script type="text/javascript">
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
